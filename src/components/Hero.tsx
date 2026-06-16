@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { Download, BookOpen, FolderGit2, Mail } from 'lucide-react';
-import profileImg from '../assets/Profile.jpeg';
 
 const Hero = () => {
     return (
@@ -74,9 +73,9 @@ const Hero = () => {
                             {/* Decorative circle/shape behind */}
                             <div className="absolute inset-0 bg-gradient-to-tr from-gray-200 to-gray-400/20 dark:from-zinc-800 dark:to-zinc-900/50 rounded-full blur-2xl animate-pulse"></div>
 
-                            {/* Photo Placeholder */}
-                            <div className="absolute inset-2 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-2xl">
-                                <img src={profileImg} alt="Veera Venkata Naga" className="w-full h-full object-cover object-[center_20%]" />
+                            {/* V Logo Container */}
+                            <div className="absolute inset-2 bg-zinc-950 dark:bg-zinc-100 rounded-full overflow-hidden border-4 border-white dark:border-zinc-800 shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-[1.02]">
+                                <span className="text-9xl md:text-[11rem] font-extrabold text-white dark:text-zinc-950 select-none tracking-tighter leading-none font-sans">V</span>
                             </div>
                             {/* Floating Stats Card Removed */}
                         </div>
