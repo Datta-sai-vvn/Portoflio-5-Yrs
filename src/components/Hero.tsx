@@ -15,13 +15,13 @@ const Hero = () => {
                     >
                         <span className="text-primary font-semibold text-lg tracking-wide">Hello, I'm</span>
                         <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white leading-tight">
-                            Veera Venkata <span className="text-primary">Naga</span>
+                            Sai <span className="text-primary">Naga</span>
                         </h1>
                         <h2 className="text-2xl md:text-3xl font-medium text-gray-600 dark:text-gray-300">
-                            Software AI Engineer
+                            Data Engineer
                         </h2>
                         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-lg leading-relaxed">
-                            Building and shipping production-grade full-stack systems and AI-powered applications (RAG, LLM fine-tuning, NLP, OCR) on AWS & Azure.
+                            Designing and operationalizing production-grade ETL/ELT and streaming pipelines across AWS and Azure, focused on scalable, reliable data platforms.
                         </p>
 
                         <div className="flex flex-wrap gap-4 pt-4">
@@ -54,10 +54,10 @@ const Hero = () => {
 
                         <div className="pt-8 flex items-center gap-8 text-sm font-medium text-gray-500 dark:text-gray-400">
                             <div className="flex items-center gap-2">
-                                <span className="w-2 h-2 rounded-full bg-green-500"></span> 5+ Years Experience
+                                <span className="w-2 h-2 rounded-full bg-green-500"></span> Seasoned Data Professional
                             </div>
                             <div className="flex items-center gap-2">
-                                <span className="w-2 h-2 rounded-full bg-blue-500"></span> MSCS @ UIC (3.8 GPA)
+                                <span className="w-2 h-2 rounded-full bg-blue-500"></span> MS in Computer Science @ UIC
                             </div>
                         </div>
                     </motion.div>
@@ -73,9 +73,9 @@ const Hero = () => {
                             {/* Decorative circle/shape behind */}
                             <div className="absolute inset-0 bg-gradient-to-tr from-gray-200 to-gray-400/20 dark:from-zinc-800 dark:to-zinc-900/50 rounded-full blur-2xl animate-pulse"></div>
 
-                            {/* V Logo Container */}
+                            {/* SN Logo Container */}
                             <div className="absolute inset-2 bg-zinc-950 dark:bg-zinc-100 rounded-full overflow-hidden border-4 border-white dark:border-zinc-800 shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-[1.02]">
-                                <span className="text-9xl md:text-[11rem] font-extrabold text-white dark:text-zinc-950 select-none tracking-tighter leading-none font-sans">V</span>
+                                <span className="text-8xl md:text-[9rem] font-extrabold text-white dark:text-zinc-950 select-none tracking-tighter leading-none font-sans">SN</span>
                             </div>
                             {/* Floating Stats Card Removed */}
                         </div>

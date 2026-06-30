@@ -65,7 +65,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-gray-900 dark:text-white">Email</h4>
-                                    <a href="mailto:vvndattasai@gmail.com" className="text-gray-600 dark:text-gray-400 hover:text-primary">vvndattasai@gmail.com</a>
+                                    <a href="mailto:dsveeravenkatanaga@gmail.com" className="text-gray-600 dark:text-gray-400 hover:text-primary">dsveeravenkatanaga@gmail.com</a>
                                 </div>
                             </div>
 
@@ -75,7 +75,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-gray-900 dark:text-white">Phone</h4>
-                                    <a href="tel:+14154663478" className="text-gray-600 dark:text-gray-400 hover:text-primary">+1-415-466-3478</a>
+                                    <a href="tel:+18728131690" className="text-gray-600 dark:text-gray-400 hover:text-primary">+1 872-813-1690</a>
                                 </div>
                             </div>
 
@@ -85,7 +85,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-gray-900 dark:text-white">Location</h4>
-                                    <p className="text-gray-600 dark:text-gray-400">San Francisco, CA (Open to Relocate)</p>
+                                    <p className="text-gray-600 dark:text-gray-400">Chicago, IL (Open to Relocate)</p>
                                 </div>
                             </div>
                         </div>
@@ -94,7 +94,7 @@ const Contact = () => {
                             <h4 className="font-bold text-gray-900 dark:text-white mb-4">Follow Me</h4>
                             <div className="flex gap-4">
 
-                                <a href="https://www.linkedin.com/in/vvnds" target="_blank" rel="noopener noreferrer" className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">
+                                <a href="https://www.linkedin.com/in/vvnaga" target="_blank" rel="noopener noreferrer" className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">
                                     <Linkedin size={20} />
                                 </a>
                             </div>

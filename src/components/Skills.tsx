@@ -1,56 +1,76 @@
 import { motion } from 'framer-motion';
-import { Brain, Database, Cloud, Code, Server, Layout, Globe, GitBranch } from 'lucide-react';
+import { Code, Cloud, Server, Cpu, Database, Brain, Sparkles, BarChart2, Terminal, ShieldCheck } from 'lucide-react';
 
 const Skills = () => {
     const skillCategories = [
         {
             title: "Languages",
             icon: <Code className="w-8 h-8 text-primary" />,
-            skills: ["Python", "JavaScript", "TypeScript", "SQL", "Bash"],
-            desc: "Core programming languages used for application logic, scripting, and analysis."
+            skills: ["Python", "SQL", "R", "Scala", "Bash"],
+            desc: "Core programming and scripting languages for data manipulation and systems automation."
+        },
+        {
+            title: "AWS Cloud",
+            icon: <Cloud className="w-8 h-8 text-primary" />,
+            skills: ["S3", "Glue", "Redshift", "EMR", "Step Functions", "Lambda", "EC2", "ECS/ECR", "IAM", "CloudWatch", "CloudTrail", "Lake Formation", "Bedrock", "SageMaker"],
+            desc: "Deploying and managing data infrastructure, storage, security, and compute on AWS.",
+            highlight: true
+        },
+        {
+            title: "Azure / GCP",
+            icon: <Server className="w-8 h-8 text-primary" />,
+            skills: ["Azure ML", "Azure OpenAI", "Data Factory", "Synapse", "GCP BigQuery", "Vertex AI"],
+            desc: "Implementing cloud data analytics, pipeline orchestration, and ML services on Azure & GCP."
+        },
+        {
+            title: "Data Engineering",
+            icon: <Cpu className="w-8 h-8 text-primary" />,
+            skills: ["Apache Spark/PySpark", "Airflow", "dbt (Cloud, Macros)", "Apache Hudi", "Kafka", "ETL/ELT", "Medallion (Bronze/Silver/Gold)"],
+            desc: "Building high-performance pipelines, streaming datasets, and lakehouse architectures.",
+            highlight: true
+        },
+        {
+            title: "Data Warehouses",
+            icon: <Database className="w-8 h-8 text-primary" />,
+            skills: ["Snowflake (Cortex, Time Travel, Zero-Copy Cloning, RBAC)", "Redshift", "BigQuery", "Databricks (Delta Lake)"],
+            desc: "Modeling curated data marts, tuning query performance, and scaling enterprise storage."
+        },
+        {
+            title: "Databases",
+            icon: <Database className="w-8 h-8 text-primary" />,
+            skills: ["PostgreSQL", "MySQL", "MongoDB", "Apache Hive", "Redis", "Vector DBs (FAISS, Pinecone, Chroma)"],
+            desc: "Relational, NoSQL, and vector storage engines for transaction, cache, and semantic lookup."
         },
         {
             title: "AI / Machine Learning",
             icon: <Brain className="w-8 h-8 text-primary" />,
-            skills: ["LLMs", "RAG", "Fine-tuning (LoRA)", "Embeddings", "Vector Search", "NLP", "Human-in-the-Loop", "scikit-learn", "PyTorch", "Hugging Face", "pandas", "NumPy", "OpenCV/OCR"],
-            desc: "Designing, fine-tuning, and implementing intelligent systems and RAG pipelines.",
+            skills: ["scikit-learn", "PyTorch", "pandas", "NumPy", "Regression", "Classification", "Clustering", "Time Series", "NLP", "Feature Engineering", "SHAP"],
+            desc: "Designing predictive models, feature scoring, and model interpretability frameworks."
+        },
+        {
+            title: "GenAI & LLM",
+            icon: <Sparkles className="w-8 h-8 text-primary" />,
+            skills: ["RAG", "LLM Fine-tuning (LoRA)", "Embeddings", "Vector Search", "Prompt Engineering", "LangChain", "OpenAI/Azure OpenAI", "Claude API"],
+            desc: "Engineering intelligent agent frameworks, vector index retrieval, and LLM orchestration.",
             highlight: true
         },
         {
-            title: "Backend Development",
-            icon: <Server className="w-8 h-8 text-primary" />,
-            skills: ["Node.js", "Express", "NestJS", "FastAPI", "REST APIs", "GraphQL", "Microservices", "WebSockets"],
-            desc: "Building scalable, high-performance APIs and microservices."
+            title: "BI & Visualization",
+            icon: <BarChart2 className="w-8 h-8 text-primary" />,
+            skills: ["Power BI", "Tableau", "Matplotlib", "Seaborn", "Plotly"],
+            desc: "Building dashboards and analytics reporting to surface operational trends."
         },
         {
-            title: "Frontend Development",
-            icon: <Layout className="w-8 h-8 text-primary" />,
-            skills: ["React", "Redux", "Tailwind", "HTML5", "CSS3", "Responsive Design", "Jest"],
-            desc: "Crafting responsive, dynamic, and state-managed user interfaces."
+            title: "DevOps",
+            icon: <Terminal className="w-8 h-8 text-primary" />,
+            skills: ["Docker", "Kubernetes", "Terraform", "CI/CD", "Jenkins", "GitHub Actions", "Git"],
+            desc: "Containerizing services, orchestrating workloads, and automating continuous delivery."
         },
         {
-            title: "Databases & Vector Storage",
-            icon: <Database className="w-8 h-8 text-primary" />,
-            skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "ElasticSearch", "Vector DBs"],
-            desc: "Designing data schemas, query optimization, and vector search storage."
-        },
-        {
-            title: "Cloud & DevOps",
-            icon: <Cloud className="w-8 h-8 text-primary" />,
-            skills: ["AWS", "Azure", "Docker", "Kubernetes", "CI/CD", "Jenkins", "Terraform", "MLOps", "CloudWatch"],
-            desc: "Deploying services containerized in Kubernetes, managed through automated CI/CD."
-        },
-        {
-            title: "Systems & Networking",
-            icon: <Globe className="w-8 h-8 text-primary" />,
-            skills: ["CloudFront", "Nginx", "Caching", "Cache Invalidation", "Load Balancing", "System Design"],
-            desc: "Optimizing traffic routing, system caching, and architectural design."
-        },
-        {
-            title: "Engineering Practices",
-            icon: <GitBranch className="w-8 h-8 text-primary" />,
-            skills: ["Git", "GitHub Actions", "Postman", "Agile/Scrum", "Unit Testing", "Code Reviews"],
-            desc: "Applying software development workflows, code quality, and testing standards."
+            title: "Practices",
+            icon: <ShieldCheck className="w-8 h-8 text-primary" />,
+            skills: ["Data Governance", "Data Quality", "Compliance", "MLOps/ModelOps", "AI-Assisted Dev", "Agile/Scrum", "Jira/Confluence"],
+            desc: "Implementing data governance compliance, schema evolution, and ModelOps observability."
         }
     ];
 
@@ -66,7 +86,7 @@ const Skills = () => {
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">My Expertise</h2>
                     <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
                     <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-                        A comprehensive toolkit for end-to-end data science, from raw data processing to model deployment.
+                        A comprehensive toolkit for end-to-end data engineering, pipeline design, and AI-powered data platform operations.
                     </p>
                 </motion.div>
 

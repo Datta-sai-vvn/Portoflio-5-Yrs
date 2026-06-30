@@ -21,6 +21,7 @@ const Navbar = () => {
         { name: 'About', to: 'about' },
         { name: 'Expertise', to: 'skills' },
         { name: 'Experience', to: 'experience' },
+        { name: 'Education', to: 'education' },
         { name: 'Projects', to: 'projects' },
         { name: 'Certification', to: 'certification' },
         { name: 'Contact', to: 'contact' },
@@ -63,11 +64,11 @@ const Navbar = () => {
                     <div className="flex-shrink-0 cursor-pointer">
                         {isHome ? (
                             <ScrollLink to="hero" smooth={true} duration={500} className="text-2xl font-bold bg-gradient-to-r from-primary to-orange-600 bg-clip-text text-transparent">
-                                VVN
+                                SN
                             </ScrollLink>
                         ) : (
                             <RouterLink to="/" className="text-2xl font-bold bg-gradient-to-r from-primary to-orange-600 bg-clip-text text-transparent">
-                                VVN
+                                SN
                             </RouterLink>
                         )}
                     </div>

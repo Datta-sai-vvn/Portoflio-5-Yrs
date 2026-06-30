@@ -5,20 +5,20 @@ const About = () => {
     const highlights = [
         {
             icon: <Briefcase size={24} className="text-white dark:text-black" />,
-            title: "Professional",
-            desc: "5+ years in Full-Stack & AI Engineering",
+            title: "Data Platforms",
+            desc: "ETL/ELT & streaming pipelines on AWS/Azure",
             color: "bg-black dark:bg-white"
         },
         {
             icon: <Microscope size={24} className="text-white dark:text-black" />,
-            title: "Research",
-            desc: "AI/ML, NLP & RAG Systems",
+            title: "AI-Powered Data",
+            desc: "RAG, embeddings, vector search, LLMs",
             color: "bg-black dark:bg-white"
         },
         {
             icon: <Cloud size={24} className="text-white dark:text-black" />,
-            title: "Cloud",
-            desc: "AWS, Azure containerized apps",
+            title: "Data Quality",
+            desc: "Governance, RBAC, SLAs/SLOs, dbt, Spark",
             color: "bg-black dark:bg-white"
         }
     ];
@@ -46,10 +46,10 @@ const About = () => {
                         className="space-y-6"
                     >
                         <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                            <span className="font-bold text-gray-900 dark:text-white">Software AI Engineer</span> with over <span className="font-semibold text-primary">5+ years of hands-on experience</span> building and shipping production-grade full-stack systems with React, Node.js, and Python, focused on scalable backend and frontend services.
+                            <span className="font-bold text-gray-900 dark:text-white">Data Engineer</span> with deep hands-on experience designing, operationalizing, and optimizing production-grade ETL/ELT and streaming pipelines across AWS and Azure, focused on scalable, reliable, and secure data platforms.
                         </p>
                         <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                            I am adept at designing RESTful APIs, cloud-native engineering on AWS/Azure, and building AI-powered applications spanning RAG pipelines, LLM fine-tuning (LoRA), NLP, and OCR. I am passionate about turning complex datasets and AI technologies into reliable, high-performance software systems.
+                            Adept at Python, SQL, R, and Scala engineering on Snowflake, Redshift, and BigQuery, orchestrating transformations with Apache Spark, Airflow, and dbt. Proficient in dimensional modeling, medallion lakehouse architectures, and embedding AI capabilities (RAG, embeddings, vector search, and LLM integrations) directly into the data layer.
                         </p>
                     </motion.div>
 

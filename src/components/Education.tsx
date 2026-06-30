@@ -35,39 +35,6 @@ const Education = () => {
                 "Focus: ML, Medical Imaging, Data Science",
                 "Active in ML research projects and academic publications"
             ]
-        },
-        {
-            id: 2,
-            degree: "Bachelor of Technology in Computer Science",
-            shortDegree: "B.Tech in Computer Science",
-            institution: "SRM Institute of Science and Technology",
-            shortName: "SRM University",
-            location: "Chennai, Tamil Nadu, India",
-            duration: "July 2018 - May 2022",
-            status: "Completed",
-            current: false,
-            gpa: "8.90",
-            gpaScale: "10.0",
-            logo: {
-                url: "https://logo.clearbit.com/srmist.edu.in",
-                fallback: "SRM",
-                color: "#003366" // SRM Blue
-            },
-            relevantCoursework: [
-                "Data Structures & Algorithms",
-                "Database Management Systems",
-                "Operating Systems",
-                "Computer Networks",
-                "Software Engineering",
-                "Object-Oriented Programming",
-                "Web Technologies",
-                "Artificial Intelligence"
-            ],
-            keyHighlights: [
-                "Graduated with Distinction (CGPA: 8.90/10)",
-                "Strong foundation in CS fundamentals and programming",
-                "Completed multiple projects in web development and ML"
-            ]
         }
     ];
 

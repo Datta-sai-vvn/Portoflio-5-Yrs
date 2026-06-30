@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, ChevronUp, Layers, Cpu, Cloud, Database } from 'lucide-react';
+import { ChevronDown, ChevronUp, Cpu, Cloud, Database } from 'lucide-react';
 import { Brain } from 'lucide-react';
 
 interface Project {
@@ -16,61 +16,49 @@ interface Project {
 const projectsData: Project[] = [
     {
         id: 1,
-        title: "RAG-Powered Research Assistant",
-        category: "AI / NLP / Vector Search",
-        techStack: ["Python", "FastAPI", "Hugging Face", "Vector Search", "React", "Embeddings"],
-        description: "A complete Retrieval-Augmented Generation system designed for academic literature search, grounding LLMs in custom document corpora.",
+        title: "GenAI Knowledge Assistant (RAG)",
+        category: "GenAI / LLM / Vector Search",
+        techStack: ["Python", "LangChain", "FlowiseAI", "Pinecone", "FastAPI", "Docker"],
+        description: "Grounded an LLM in a private corpus via embeddings and vector search, returning source-cited answers.",
         points: [
-            "Built a RAG pipeline grounding an LLM in a custom corpus using embeddings, chunking, and vector search.",
-            "Served it via a FastAPI backend and React UI, returning source-cited, evaluation-validated answers."
-        ],
-        icon: Cpu
-    },
-    {
-        id: 2,
-        title: "Fine-Tuned Transformer for Text Classification",
-        category: "Machine Learning / Deep Learning",
-        techStack: ["Python", "PyTorch", "Hugging Face", "scikit-learn", "pandas", "LoRA"],
-        description: "Parameter-efficient fine-tuning of transformer models for high-accuracy text classification and evaluation.",
-        points: [
-            "Fine-tuned a transformer with LoRA on a labeled dataset, reaching 92% F1 over scikit-learn baselines.",
-            "Tracked experiments and model evaluation metrics with pandas, comparing accuracy, F1, and latency across sizes."
+            "Grounded an LLM in a private corpus via embeddings and vector search, returning source-cited answers.",
+            "Orchestrated retrieval in FlowiseAI and containerized with Docker, cutting answer latency by 40%."
         ],
         icon: Brain
     },
     {
-        id: 3,
-        title: "Distributed Microservices Platform",
-        category: "Backend / Microservices / DevOps",
-        techStack: ["Node.js", "NestJS", "REST APIs", "Docker", "Kubernetes", "Redis"],
-        description: "High-throughput and fault-tolerant microservices backend built to sustain high concurrent traffic.",
+        id: 2,
+        title: "Fraud Detection & Risk Modeling Platform",
+        category: "AI / Machine Learning / MLOps",
+        techStack: ["Python", "scikit-learn", "Snowflake", "SHAP", "Airflow"],
+        description: "Trained classification models on Snowflake features to identify high-risk P&C claims with automated retraining.",
         points: [
-            "Designed fault-tolerant microservices with REST APIs and Redis caching, using retries, timeouts, and health checks.",
-            "Deployed the services on Kubernetes with autoscaling and Docker, holding low latency under high-concurrency load."
+            "Trained classification models on Snowflake features, flagging high-risk transactions at 0.92 AUC.",
+            "Automated retraining and model monitoring in Airflow with SHAP explainability and drift checks."
         ],
-        icon: Layers
+        icon: Cpu
     },
     {
-        id: 4,
-        title: "Cloud-Native Data Pipeline",
-        category: "Data Engineering / Cloud",
-        techStack: ["Python", "AWS", "Docker", "CI/CD", "PostgreSQL"],
-        description: "Automated, scalable ETL data pipelines for ingestion, validation, and storage of high-volume records.",
+        id: 3,
+        title: "Cloud-Native Medallion Lakehouse",
+        category: "Data Platform / Cloud Infrastructure",
+        techStack: ["AWS Glue", "Apache Hudi", "Redshift", "dbt", "Terraform"],
+        description: "Built a Bronze/Silver/Gold medallion lakehouse on S3 with Glue, Hudi upserts, and Redshift marts.",
         points: [
-            "Built a cloud-native data pipeline transforming 10K+ records through validated, scheduled runs into PostgreSQL.",
-            "Containerized each stage with Docker and automated build, test, and deployment through CI/CD on AWS."
+            "Built a Bronze/Silver/Gold lakehouse on S3 with Glue and Hudi upserts, serving Redshift marts via dbt.",
+            "Provisioned infrastructure with Terraform and automated tests and deploys through CI/CD."
         ],
         icon: Cloud
     },
     {
-        id: 5,
-        title: "Full-Stack Analytics Dashboard",
-        category: "Full-Stack Web Development",
-        techStack: ["React", "Node.js", "Express", "PostgreSQL", "Docker", "JWT"],
-        description: "Comprehensive analytics portal featuring secure role-based access control and live data visualization.",
+        id: 4,
+        title: "Real-Time Streaming Analytics Pipeline",
+        category: "Data Engineering / Streaming",
+        techStack: ["Kafka", "Spark Structured Streaming", "Snowflake", "Power BI"],
+        description: "Streamed Kafka events through Spark Structured Streaming into Snowflake with real-time BI reporting.",
         points: [
-            "Built a full-stack dashboard with a React frontend and Node.js/Express REST APIs over PostgreSQL.",
-            "Added JWT authentication and role-based access, then containerized the app with Docker."
+            "Streamed Kafka events through Spark Structured Streaming into Snowflake with sub-minute freshness.",
+            "Surfaced live KPIs in Power BI with windowed, exactly-once aggregations for near real-time monitoring."
         ],
         icon: Database
     }
@@ -173,7 +161,7 @@ const Projects = () => {
                 >
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">Projects</h2>
                     <p className="text-gray-450 text-lg max-w-2xl mx-auto">
-                        A showcase of full-stack engineering, microservices architectures, AI systems, and cloud pipelines.
+                        A showcase of cloud data warehousing, real-time streaming analytics, medallion lakehouses, and AI-powered data layers.
                     </p>
                     <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4"></div>
                 </motion.div>

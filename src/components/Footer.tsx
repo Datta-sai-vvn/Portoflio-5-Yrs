@@ -10,16 +10,16 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row justify-between items-center bg-gray-50 dark:bg-secondary p-8 rounded-2xl">
                     <div className="mb-4 md:mb-0">
-                        <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-orange-600 bg-clip-text text-transparent mb-2">VVN</h3>
+                        <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-orange-600 bg-clip-text text-transparent mb-2">SN</h3>
                         <p className="text-gray-600 dark:text-gray-400">
-                            © {new Date().getFullYear()} Veera Venkata Naga (Datta Sai VVN). All rights reserved.
+                            © {new Date().getFullYear()} Sai Naga. All rights reserved.
                         </p>
                     </div>
 
                     <div className="flex space-x-6 mb-4 md:mb-0">
                         <a href="/resume.pdf" target="_blank" className="text-gray-600 hover:text-primary dark:text-gray-400 transition-colors">Resume</a>
 
-                        <a href="https://www.linkedin.com/in/vvnds" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary dark:text-gray-400 transition-colors"><Linkedin size={20} /></a>
+                        <a href="https://www.linkedin.com/in/vvnaga" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary dark:text-gray-400 transition-colors"><Linkedin size={20} /></a>
                     </div>
 
                     <button
